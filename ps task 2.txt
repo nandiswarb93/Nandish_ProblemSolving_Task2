@@ -1,0 +1,95 @@
+1 . write a program to print reverse of a number by using while loop
+
+ var number = +prompt("enter a number to reverse a number : ")
+    sum = 0
+    remainder  = 0
+    while(number > 0)
+    {
+      remainder = number % 10;
+      sum = remainder +(sum*10);
+      number = Math.floor(number/10);
+    }
+    console.log("reverse of a given  numver " + sum);
+
+
+o/p:
+enter a number to reverse a number : 987654321
+reverse of a given  numver 123456789
+ 
+
+2. write a program to check whether input 2 is available in input1
+input1: 108
+input 2: 8
+true
+input 1: 535
+input 2: 6
+false
+   
+input1 = +prompt("enter a number : ")
+input2 = +prompt("enter a number to check the number is available or not in the above number : ")
+sum = ""
+remainder  = 0
+temp = false
+while(input1 > 0)
+    {
+      remainder = input1 % 10;
+      sum = remainder;
+      if(sum == input2)
+      {
+          temp = true
+          break;
+      }
+      input1 = Math.floor(input1/10);
+    }    
+console.log(temp);
+
+o/p:
+enter a number : 987654321
+enter a number to check the number is available or not in the above number : 3
+true
+
+
+input = +prompt("enter a number to check even or odd by using switch case method")
+switch(input%2)
+{
+    case 0:
+        console.log("given number is even ");
+        break;
+        
+    case 1:
+        console.log("given number is odd");
+        break
+          
+        
+    default:
+    {
+    console.log("invalid input ");
+    }
+}
+
+3. write a program to check whether a number is event not by using switch statement
+
+input = +prompt("enter a number to check even or odd by using switch case method")
+switch((Math.floor(input/2)*2 == input))
+{
+    case (true):
+        console.log("given number is even ");
+        break;
+        
+    case (false):
+        console.log("given number is odd");
+        break
+          
+        
+    default:
+    {
+    console.log("invalid input ");
+    }
+}
+
+
+o/p:
+
+
+enter a number to check even or odd by using switch case method 1010
+given number is even
